@@ -20,7 +20,7 @@ resource "aws_elasticache_subnet_group" "main" {
 
 output "redis" {
   value =  aws_elasticache_cluster.elasticache
-}
+}a
 
 resource "aws_ssm_parameter" "elasticache_endpoint" {
   name  = "${var.env}.elasticache.endpoint"
